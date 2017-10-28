@@ -207,6 +207,12 @@ class VtAccountData(VtBaseData):
         self.margin = EMPTY_FLOAT               # 保证金占用
         self.closeProfit = EMPTY_FLOAT          # 平仓盈亏
         self.positionProfit = EMPTY_FLOAT       # 持仓盈亏
+
+        # GDAX specific fileds
+        self.currency = EMPTY_FLOAT
+        self.hold = EMPTY_FLOAT
+        self.id = EMPTY_STRING
+        self.profile_id = EMPTY_STRING
         
 
 ########################################################################

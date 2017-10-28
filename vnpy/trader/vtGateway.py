@@ -111,37 +111,37 @@ class VtGateway(object):
     #----------------------------------------------------------------------
     def connect(self):
         """连接"""
-        pass
+        raise NotImplementedError
     
     #----------------------------------------------------------------------
     def subscribe(self, subscribeReq):
         """订阅行情"""
-        pass
+        raise NotImplementedError
     
     #----------------------------------------------------------------------
     def sendOrder(self, orderReq):
         """发单"""
-        pass
+        raise NotImplementedError
     
     #----------------------------------------------------------------------
     def cancelOrder(self, cancelOrderReq):
         """撤单"""
-        pass
+        raise NotImplementedError
     
     #----------------------------------------------------------------------
     def qryAccount(self):
         """查询账户资金"""
-        pass
+        raise NotImplementedError
     
     #----------------------------------------------------------------------
     def qryPosition(self):
         """查询持仓"""
-        pass
+        raise NotImplementedError
     
     #----------------------------------------------------------------------
     def close(self):
         """关闭"""
-        pass
+        raise NotImplementedError
     
     
     

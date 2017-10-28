@@ -6,6 +6,7 @@ import traceback
 from vnpy.trader.vtFunction import loadIconPath
 from vnpy.trader.vtGlobal import globalSetting
 from vnpy.trader.uiBasicWidget import *
+from vnpy.trader.language.chinese.constant import *
 
 
 ########################################################################

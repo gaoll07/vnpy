@@ -334,7 +334,7 @@ class BasicMonitor(QtWidgets.QTableWidget):
                         cell.data = data                    
         # 否则采用增量更新模式
         else:
-            self.insertRow(0)  
+            self.insertRow(0)
             for n, header in enumerate(self.headerList):
                 content = safeUnicode(data.__getattribute__(header))
                 cellType = self.headerDict[header]['cellType']
@@ -427,21 +427,21 @@ class MarketMonitor(BasicMonitor):
         
         # 设置表头有序字典
         d = OrderedDict()
-        d['symbol'] = {'chinese':vtText.CONTRACT_SYMBOL, 'cellType':BasicCell}
-        d['vtSymbol'] = {'chinese':vtText.CONTRACT_NAME, 'cellType':NameCell}
-        d['lastPrice'] = {'chinese':vtText.LAST_PRICE, 'cellType':BasicCell}
-        d['preClosePrice'] = {'chinese':vtText.PRE_CLOSE_PRICE, 'cellType':BasicCell}
-        d['volume'] = {'chinese':vtText.VOLUME, 'cellType':BasicCell}
-        d['openInterest'] = {'chinese':vtText.OPEN_INTEREST, 'cellType':BasicCell}
-        d['openPrice'] = {'chinese':vtText.OPEN_PRICE, 'cellType':BasicCell}
-        d['highPrice'] = {'chinese':vtText.HIGH_PRICE, 'cellType':BasicCell}
-        d['lowPrice'] = {'chinese':vtText.LOW_PRICE, 'cellType':BasicCell}
-        d['bidPrice1'] = {'chinese':vtText.BID_PRICE_1, 'cellType':BidCell}
-        d['bidVolume1'] = {'chinese':vtText.BID_VOLUME_1, 'cellType':BidCell}
-        d['askPrice1'] = {'chinese':vtText.ASK_PRICE_1, 'cellType':AskCell}
-        d['askVolume1'] = {'chinese':vtText.ASK_VOLUME_1, 'cellType':AskCell}
-        d['time'] = {'chinese':vtText.TIME, 'cellType':BasicCell}
-        d['gatewayName'] = {'chinese':vtText.GATEWAY, 'cellType':BasicCell}
+        d['symbol'] = {'chinese': vtText.CONTRACT_SYMBOL, 'cellType': BasicCell}
+        d['vtSymbol'] = {'chinese': vtText.CONTRACT_NAME, 'cellType': NameCell}
+        d['lastPrice'] = {'chinese': vtText.LAST_PRICE, 'cellType': BasicCell}
+        d['preClosePrice'] = {'chinese': vtText.PRE_CLOSE_PRICE, 'cellType': BasicCell}
+        d['volume'] = {'chinese': vtText.VOLUME, 'cellType': BasicCell}
+        d['openInterest'] = {'chinese': vtText.OPEN_INTEREST, 'cellType': BasicCell}
+        d['openPrice'] = {'chinese': vtText.OPEN_PRICE, 'cellType': BasicCell}
+        d['highPrice'] = {'chinese': vtText.HIGH_PRICE, 'cellType': BasicCell}
+        d['lowPrice'] = {'chinese': vtText.LOW_PRICE, 'cellType': BasicCell}
+        d['bidPrice1'] = {'chinese': vtText.BID_PRICE_1, 'cellType': BidCell}
+        d['bidVolume1'] = {'chinese': vtText.BID_VOLUME_1, 'cellType': BidCell}
+        d['askPrice1'] = {'chinese': vtText.ASK_PRICE_1, 'cellType': AskCell}
+        d['askVolume1'] = {'chinese': vtText.ASK_VOLUME_1, 'cellType': AskCell}
+        d['time'] = {'chinese': vtText.TIME, 'cellType': BasicCell}
+        d['gatewayName'] = {'chinese': vtText.GATEWAY, 'cellType': BasicCell}
         self.setHeaderDict(d)
         
         # 设置数据键
@@ -633,15 +633,15 @@ class AccountMonitor(BasicMonitor):
         super(AccountMonitor, self).__init__(mainEngine, eventEngine, parent)
         
         d = OrderedDict()
-        d['accountID'] = {'chinese':vtText.ACCOUNT_ID, 'cellType':BasicCell}
-        d['preBalance'] = {'chinese':vtText.PRE_BALANCE, 'cellType':BasicCell}
-        d['balance'] = {'chinese':vtText.BALANCE, 'cellType':BasicCell}
-        d['available'] = {'chinese':vtText.AVAILABLE, 'cellType':BasicCell}
-        d['commission'] = {'chinese':vtText.COMMISSION, 'cellType':BasicCell}
-        d['margin'] = {'chinese':vtText.MARGIN, 'cellType':BasicCell}
-        d['closeProfit'] = {'chinese':vtText.CLOSE_PROFIT, 'cellType':BasicCell}
-        d['positionProfit'] = {'chinese':vtText.POSITION_PROFIT, 'cellType':BasicCell}
-        d['gatewayName'] = {'chinese':vtText.GATEWAY, 'cellType':BasicCell}
+        d['accountID'] = {'chinese': vtText.ACCOUNT_ID, 'cellType': BasicCell}
+        d['preBalance'] = {'chinese': vtText.PRE_BALANCE, 'cellType': BasicCell}
+        d['balance'] = {'chinese': vtText.BALANCE, 'cellType': BasicCell}
+        d['available'] = {'chinese': vtText.AVAILABLE, 'cellType': BasicCell}
+        d['commission'] = {'chinese': vtText.COMMISSION, 'cellType': BasicCell}
+        d['margin'] = {'chinese': vtText.MARGIN, 'cellType': BasicCell}
+        d['closeProfit'] = {'chinese': vtText.CLOSE_PROFIT, 'cellType': BasicCell}
+        d['positionProfit'] = {'chinese': vtText.POSITION_PROFIT, 'cellType': BasicCell}
+        d['gatewayName'] = {'chinese': vtText.GATEWAY, 'cellType': BasicCell}
         self.setHeaderDict(d)
         
         self.setDataKey('vtAccountID')

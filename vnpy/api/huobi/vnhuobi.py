@@ -436,7 +436,7 @@ class TradeApi(object):
         print data
     
     #----------------------------------------------------------------------
-    def onGetOrders(self, data, req, reqID, fuck):
+    def onGetOrders(self, data, req, reqID):
         """查询委托回调"""
         print data
         
@@ -621,17 +621,17 @@ class DataApi(object):
     #----------------------------------------------------------------------
     def onTick(self, data):
         """实时成交推送"""
-        print data
+        raise NotImplementedError
         
     #----------------------------------------------------------------------
     def onQuote(self, data):
         """实时报价推送"""
-        print data    
+        raise NotImplementedError
     
     #----------------------------------------------------------------------
     def onDepth(self, data):
         """实时深度推送"""
-        print data        
+        raise NotImplementedError
 
     #----------------------------------------------------------------------
     def getKline(self, symbol, period, length=0):
